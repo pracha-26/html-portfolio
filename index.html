@@ -1,37 +1,77 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angela Yu's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
-<body>
-    <h1>Angela yu's Portfolio</h1>
-    <h2>I'm a web Developer</h2>
-    <hr>
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Porject</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="movie Ranking Project"/>
+<body>        
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><h1 class="fw-bolder text-gradient">Mr.Pracha</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./public/about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./public/skill.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./public/project.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./public/contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/images/birthday-invite.png" height="200" alt="birthday Invite Project"/>
-    <hr>
 
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+
+        <!-- Header-->
+        <header class="py-5 ">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-5">
+                        <!-- Header text content-->
+                        <div class="text-center text-xxl-start">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Design &middot; Development &middot; Marketing</div></div>
+                            <div class="fs-3 fw-light text-muted">This is the home page.</div>
+                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Welcome to my website.</span></h1>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <!-- About Section-->
+        <section class="bg-light py-5 gradient-background">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                            <p class="lead fw-light mb-4">My name is Pracha Phimthawong you can call me Manat.</p>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
+                            <div class="d-flex justify-content-center fs-2 gap-4">
+                                <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+                                <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+                                <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
+
+
